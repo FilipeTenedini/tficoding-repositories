@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  body {
+    background-color: #0b0a1a;
+  }
+  header {
+    width: 100vw;
+    background-color: #0b0a1a;
+  }
+  .tfi-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav {
+    width: 100vw;
+    background-color: #1a313f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu ul {
+    list-style-type: none;
+    display: inline-flex;
+    height: 100%;
+  }
+  .menu ul li {
+    margin-right: 15px;
+    color: #fff;
+    width: 250px;
+    /* border: 1px solid #fff; */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .menu ul li:hover {
+    background-color: #37868b;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+  }
+  .menu ul ul li:hover {
+    transform: scale(1);
+    background-color: #1a313f;
+  }
+  .sub-menu {
+    display: none;
+    background-color: #37868b;
+  }
+  .sub-menu ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu ul li:hover > .sub-menu {
+    display: block;
+  }
+  .sub-sub-menu {
+    display: none;
+    background-color: #37868b;
+  }
+  .sub-sub-menu ul {
+    width: 100%;
+  }
+  .sub-menu ul li:hover > .sub-sub-menu {
+    display: block;
+    position: relative;
+    top: -30px;
+    left: 250px;
+  }
