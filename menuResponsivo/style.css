@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Encode Sans", sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #f5f6f7;
+  }
+  .container {
+    width: 750px;
+  }
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+  header .header-logo img {
+    width: 100%;
+  }
+  header .header-logo.mob-img {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f5f6f7;
+    margin-bottom: 20px;
+  }
+  nav .container .menu-desktop {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  nav .container .menu-desktop li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .menu-mobile {
+    list-style: none;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .menu-mobile li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .g1 {
+    color: #c3170c;
+  }
+  .oglobo {
+    color: #1e4b9b;
+  }
+  .valor {
+    color: #006766;
+  }
+  .ge {
+    color: #07aa47;
+  }
+  .cartola {
+    color: #e3662b;
+  }
+  .globoplay {
+    color: #fb0735;
+  }
+  .dropz {
+    color: #ff75bb;
+  }
+  .gshow {
+    color: #ec7d00;
+  }
+  .quem {
+    color: #323333;
+  }
+  .receitas {
+    color: #a81d83;
+  }
+  .tech {
+    color: #666666;
+  }
+  .videos {
+    color: #0769de;
+  }
+  
+  @media (max-width: 600px) {
+    header,
+    nav {
+      border-bottom: 1px solid #e6e6e6;
+    }
+    header .header-logo.desk-img {
+      display: none;
+    }
+    header .header-logo.mob-img {
+      display: flex;
+    }
+    header .header-logo.mob-img img {
+      width: 208px;
+      height: 57px;
+    }
+    nav .container .menu-desktop {
+      display: none;
+    }
+    .menu-mobile {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
